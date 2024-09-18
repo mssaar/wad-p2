@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- viewport on selleks, et kohandaks suuruse seadmele -->
+     <!-- Ctrl + K C    teeb rea comment'iks -->
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            <!-- "alt" on kui tekib viga pildi kuvamisel, siis kuvatakse "alt" tekst -->
+        </div>
+        <div>
+            <ul>
+                <li>Your name</li>
+                <li> A date following this format dd/mm/yyyy</li>
+                <li> Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <!-- strong on boldis -->
+            <strong>2.65</strong>
+        </div>
+    </section>
+
+    <section>
+        <h1>Courses</h1>
+        <!-- border paneb tabelis kastid ümber -->
+        <table border="1">
+            <thead>
+            <!-- tr ehk table row -->
+            <tr>
+                <!-- th ehk table head ehk veergude pealkirjad -->
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <!-- td ehk table data -->
+                <td>1</td>
+                <td> <a href="https://courses.cs.ut.ee/2024/ASD/fall" target="_blank" >Agile software development</a> </td>
+                <!-- colspan paneb, et lahter on kaheveeru laiune, rowspan paneb, et on piklikum e kaherea pikkune -->
+                <td colspan="2">fall</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> <a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall" target="_blank">Systems modelling</a> </td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> <a href="https://courses.cs.ut.ee/2024/RE/fall" target="_blank">Requirements Engineering</a> </td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> <a href="https://courses.cs.ut.ee/2023/HCI/fall" target="_blank">Human Computer Interaction </a></td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- FORM, kus kasutaja saab asju täita. INPUT on kast,kuhu saab kirj -->
+        <form>
+            <label for="course title">Course Title:</label>
+            <br>
+            <input id="course title" type="text">
+            <br>
+
+            <label for="semester">Semester:</label>
+            <br>
+            <!-- BR e break row paneb järgmisele reale. Select on riba, kust kukuvad valikud alla -->
+            <select id="semester">
+                <option >Fall</option>
+                <option >Spring</option>
+            </select>
+            <br>
+            
+            <label for="attendance"><strong>Attendance</strong></label>
+            <br>
+            <input type="radio" name="attendance">
+            <label >Virtual</label>
+
+            <input type="radio" name="attendance">
+            <label >Physical</label>
+            
+        </form>
+
+    </section>
+
+    <footer>
+        <!-- ul ehk unordered list -->
+        <ul>
+            <li>
+                <!-- kui target pole blank, siis avab lahtiolevas tabis -->
+                <a href="https://ois2.ut.ee/" target="_blank" >OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank" >Courses</a>
+            </li>
+        </ul>
+    </footer>
+
+  </body>
+</html>
